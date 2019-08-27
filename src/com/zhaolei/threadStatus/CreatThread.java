@@ -15,7 +15,7 @@ package com.zhaolei.threadStatus;
  * 继承Thread,并覆盖run（）方法
  * 这种方法直接调用start()方法启动线程
  */
-class extendsThread extends Thread{
+class ExtendsThread extends Thread{
     @Override
     public void run(){
         System.out.println("这是实现Thread的方法");
@@ -23,6 +23,8 @@ class extendsThread extends Thread{
 }
 public class CreatThread {
     public static void main(String []args){
+        ExtendsThread t=new ExtendsThread();
+        t.start();
 
     }
 }
